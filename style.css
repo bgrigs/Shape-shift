@@ -3,15 +3,29 @@ body {
     font-family: monospace;
 }
 
+label {
+    font-size: 18px;
+}
+
+.menu {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
 .block {
     width: 150px;
     height: 150px;
-    background: linear-gradient(to top, #333 0%, #666 50%, #333 100%);
+    background: linear-gradient(to top, #000 0%, #333 50%, #000 100%);
     box-shadow: inset 2px 2px 100px 2px #333;
     border-radius: 10px;
-    display: inline-block;
-    vertical-align: top;
+    /* display: inline-block; */
+    /* vertical-align: top; */
     color: #fff;
+    margin: 5px;
 }
 
 h3 {
@@ -19,12 +33,11 @@ h3 {
     font-size: 18px;
     font-weight: 300;
 }
-
-.vertical {
+ .vertical {
     width: 75px;
     height: 75px;
     display: flex;
-     align-items: center;
+    align-items: center;
     justify-content: center; 
     margin: 0 auto; 
 }
@@ -39,4 +52,55 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     height: 75px; 
+} 
+
+.horizontal {
+    width: 100px;
+    margin: 25px auto 0;
+}
+
+.horizontal input {
+    width: 100px;
+    margin: 3px auto 0;
+}
+
+.horizontal label {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.center{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hex-container {
+    width: 110px;
+    margin: 30px auto 0;
+}
+
+#hex {
+    width: 80px;
+}
+
+.rgba-container  {
+    width: 100px;
+    margin: -7px auto 0;
+}
+.rgba-container input {
+    width: 80px;
+}
+
+#block {
+    width: 150px;
+    height: 150px; 
+    background-color: red;
+}
+
+.container {
+    margin: 50px 5px;
 }

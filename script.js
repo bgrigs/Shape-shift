@@ -13,10 +13,16 @@ window.onload = function() {
     }
 
     //Size manipulation
+    let currentSize = 1;
+    let currentAngle= 0;
+
     let size = document.getElementById('size'); 
     size.onchange = function() {
-        block.style.transform = 'scale('+size.value+')';
+        currentSize = size.value; 
+        block.style.transform = 'scale('+currentSize+') rotate('+currentAngle+'deg)';
     }
+
+
 
      //Opacity manipulation
      let opacity = document.getElementById('opacity'); 
@@ -31,13 +37,15 @@ window.onload = function() {
      okButton.onclick = function() {
          let option = selector.value;
             if(option === '1') {
+                currentAngle = 0;
                 block.style.borderRadius = '0';
                 block.style.transform = 'rotate(0deg)';
             } else if(option === '2') {
                 block.style.borderRadius = '50%';
             } else if (option === '3') {
                 block.style.borderRadius = '0';
-                block.style.transform = 'rotate(45deg)';
+                currentAngle = 45;
+                block.style.transform = 'scale('+currentSize+') rotate('+currentAngle+'deg)';
             }
      }
 

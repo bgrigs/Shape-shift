@@ -22,8 +22,6 @@ label {
     background: linear-gradient(to top, #000 0%, #333 50%, #000 100%);
     box-shadow: inset 2px 2px 100px 2px #333;
     border-radius: 10px;
-    /* display: inline-block; */
-    /* vertical-align: top; */
     color: #fff;
     margin: 5px;
 }
@@ -33,6 +31,7 @@ h3 {
     font-size: 18px;
     font-weight: 300;
 }
+
  .vertical {
     width: 75px;
     height: 75px;
@@ -91,6 +90,7 @@ h3 {
     width: 100px;
     margin: -7px auto 0;
 }
+
 .rgba-container input {
     width: 80px;
 }
